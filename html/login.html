@@ -1,0 +1,25 @@
+<ion-view>
+	<ion-content ng-controller="login" class='login'>
+	    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()">
+	    </ion-refresher>
+	    <!--标题-->
+ 	 	<div class="tt">
+ 	 		
+ 	 	</div>
+ 	 	<div class="bar bar-header">
+		  <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goback()"></button>
+		  <div class="h1 title">注册</div>
+		</div>
+		<!--广告-->
+ 	 	<div class="banner">
+ 	 		<img src="img/pic8.jpg"/>
+ 	 	</div>
+ 	 	<!--账号密码-->
+ 	 	<div class="msg">
+ 	 		<p>账号:<input type="text" placeholder="请输入账号" ng-model="user" ng-change="shuru()"/></p>
+ 	 		<p>密码:<input type="password" placeholder="请输入密码" ng-model="pass"/></p>
+ 	 	</div>
+ 	 	<button class="btn" ng-click="goregister()" ng-style="deng">注册</button>
+ 	 	<p class="jinggao" ng-if="jinggao">该用户已存在</p>
+	</ion-content>
+</ion-view>

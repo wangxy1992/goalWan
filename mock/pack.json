@@ -1,0 +1,42 @@
+{
+	"state" : "1",
+	"msg" : "success",
+	"banner" : [
+		{"imgSrc" : "img/pic1.jpg"},
+		{"imgSrc" : "img/pic2.jpg"},
+		{"imgSrc" : "img/pic3.jpg"},
+		{"imgSrc" : "img/pic4.jpg"},
+		{"imgSrc" : "img/pic5.jpg"},
+		{"imgSrc" : "img/pic6.jpg"},
+		{"imgSrc" : "img/pic7.jpg"},
+		{"imgSrc" : "img/pic8.jpg"}
+	],
+	"newhand":[
+		{"earning" : "78.23%","deading" : "34","residue":"56000","active":"ac","periodical":"新手计划第068期","residues":"56"},
+		{"earning" : "56.3%","deading" : "75","residue":"489546","active":"ac","periodical":"特权尊享第058期","residues":"56"}	
+	],
+	"privilege":[
+		{"earning" : "15.88%","deading" : "66","residue":"56000","active":"ac","periodical":"特权尊享第022期","residues":"15"},
+		{"earning" : "56.3%","deading" : "75","residue":"489546","active":"ac","periodical":"特权尊享第058期","residues":"68"}	
+	],
+	"boutique":[
+		{"earning" : "44.8%","deading" : "35","residue":"687678","active":"ac","periodical":"月盈计划第078期","residues":"78"},
+		{"earning" : "88.38%","deading" : "45","residue":"78678","active":"ac","periodical":"双月计划第045期","residues":"32"},
+		{"earning" : "12.88%","deading" : "89","residue":"546451","active":"acn","periodical":"双月计划第098期","residues":"81"},
+		{"earning" : "68.4%","deading" : "65","residue":"1233477","active":"acn","periodical":"季盈计划第051期","residues":"46"},
+		{"earning" : "66.1%","deading" : "44","residue":"87977","active":"ac","periodical":"新手计划第064期","residues":"23"},
+		{"earning" : "55.26%","deading" : "78","residue":"45646","active":"acn","periodical":"月盈计划第057期","residues":"78"}
+	],
+	"boutique2":[
+		{"earning" : "41.8%","deading" : "35","residue":"69866","active":"ac","periodical":"月盈计划第079期","residues":"54"},
+		{"earning" : "38.38%","deading" : "15","residue":"75688","active":"ac","periodical":"双月计划第035期","residues":"32"},
+		{"earning" : "95.88%","deading" : "84","residue":"51545","active":"acn","periodical":"双月计划第158期","residues":"35"},
+		{"earning" : "44.88%","deading" : "75","residue":"23631","active":"acn","periodical":"双月计划第028期","residues":"82"}
+	],
+	"boutique3":[
+		{"earning" : "44.8%","deading" : "34","residue":"69886","active":"ac","periodical":"月盈计划第086期","residues":"45"},
+		{"earning" : "38.38%","deading" : "75","residue":"75688","active":"ac","periodical":"双月计划第021期","residues":"32"},
+		{"earning" : "45.88%","deading" : "8","residue":"5865","active":"acn","periodical":"双月计划第14期","residues":"38"},
+		{"earning" : "75.88%","deading" : "76","residue":"86631","active":"acn","periodical":"双月计划第247期","residues":"46"}
+	]
+}

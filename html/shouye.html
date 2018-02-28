@@ -1,0 +1,70 @@
+<ion-view >
+	<ion-content ng-controller="first" class='first'>
+	    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()">
+	    </ion-refresher>
+	    <!--轮播图-->
+	    <div class="banner">
+	    	<ion-slide-box auto-play="true" does-continue="true" slide-interval=3000>
+			   	 <ion-slide ng-repeat="data in datalist track by $index">
+			      <div class="box" ng-click="toFind()"><img src={{data.imgSrc}}></div>
+			    </ion-slide>
+			</ion-slide-box>
+	    </div>
+	    
+		<!--通知-->
+		<div class="infrom">
+			<div class="inf">
+				<div class="left">
+					<i class="iconfont icon-laba"></i>
+				</div>
+				<div class="mid">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<p class="swiper-slide">
+								特权尊享活动说明
+							</p>
+							<p class="swiper-slide">
+								招商银行支付系统紧急维护通知
+							</p>
+							<p class="swiper-slide">
+								各大银行限额说明
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					更多
+				</div>
+			</div>
+			<div class="award">
+				<div>
+					<p>新手福利<br/><span>惊喜送不停</span></p>
+					<img src="img/award1.jpg" alt="" />
+				</div>
+				<div>
+					<p>邀请好友<br/><span>享现金奖励</span></p>
+					<img src="img/award2.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+		<!--主要内容-->
+		<div class="main">
+			<h5><span>新手专区</span></h5>
+			<div class="top">
+				<img src="img/greenhand.jpg" alt="" class="greenhand"/>
+				<p>新手计划 第066期<span><a href="">首投有奖励，土豪有惊喜</a></span></p>
+				<div ng-click="toDetail('newhand','0')">
+					<p>预期年化<br/><span>15.88%</span></p>
+					<p>100起投，期限14天<br/><span><i></i></span><i>已售85%</i></p>
+				</div>
+				<button ng-click="touzi()">立即购买</button>			
+			</div>
+			<!--新手入门指南-->
+			<div class="bot" ng-click="toDetail()">
+				<h3><i>新手入门</i>指南<br/><span>认识金碗理财，从这里开始</span></h3>
+				<img src="img/zhinan.jpg"/>
+			</div>
+			<p>央企100%实力控股</p>
+		</div>
+	</ion-content>
+</ion-view>

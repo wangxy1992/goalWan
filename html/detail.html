@@ -1,0 +1,53 @@
+<ion-view>
+	<ion-content ng-controller="detail" class='detail'>
+	    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()">
+	    </ion-refresher>
+	    <!--标题-->
+ 	 	<div class="tt">
+ 	 		
+ 	 	</div>
+ 	 	<div class="bar bar-header">
+		  <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goback()"></button>
+		  <div class="h1 title">{{_detail.periodical}}</div>
+		</div>
+ 	 	<!--参数-->
+ 	 	<div class="param">
+ 	 		<div class="top">
+ 	 			<p>预期年化收益率</p>
+ 	 			<h3>{{_detail.earning}}</h3>
+ 	 		</div>
+ 	 		<div class="bot">
+ 	 			{{_detail.residues}}%
+ 	 			<span><i style="width: {{_detail.residues}}%;" ng-if="residues" class="residues"></i></span>
+ 	 			<div>
+ 	 				<p style="text-align: left;">投资期限<br/>{{_detail.deading}}天</p>
+ 	 				<p style="text-align: center;">项目总额<br/>{{_detail.residue|number:"2"}}元</p>
+ 	 				<p style="text-align: right;">剩余可投<br/>{{_detail.residue*(1-_detail.residues/100)|number:"2"}}元</p>
+ 	 			</div>	
+ 	 		</div>	
+ 	 	</div>
+ 	 	<div class="ee">
+ 	 		<i class="iconfont icon-liwuhuodong"></i>
+ 	 		<p>新手专享，首投送现金，再送888元红包，查看更多</p>
+ 	 		<i class="ion-chevron-right"></i>
+ 	 	</div>
+ 	 	<ul class="main">
+ 	 		<li><span>还款方式</span>到期还本付息</li>
+ 	 		<li><span>起息时间</span>募集成功当日起息</li>
+ 	 		<li><span>买入规则</span>100元起投，限购1000000元</li>
+ 	 	</ul>
+ 	 	<div class="end">
+ 	 		<p>投资人数<span>{{ren}}人</span></p>
+ 	 		<p>投资福利</p>
+ 	 		<dl>
+ 	 			<dt><img src="img/award2.jpg"/></dt>
+ 	 			<dd>158*****816 用户单笔投资额高达100000元，抢先成为本项目投资额最高的土豪，他将有机会获得50元土豪红包，超过他，红包就是您的！</dd>
+ 	 		</dl>
+ 	 		<dl>
+ 	 			<dt><img src="img/award2.jpg"/></dt>
+ 	 			<dd>最后一位收官的投资用户将获得最高30元收官红包，本项目剩余可投192500元，蓄势待发，红包等你拿！</dd>
+ 	 		</dl>
+ 	 	</div>
+ 	 	<p class="_end">央企100%实力控股</p>
+	</ion-content>
+</ion-view>

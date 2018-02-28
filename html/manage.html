@@ -1,0 +1,88 @@
+<ion-view class='second' title="精选理财" >
+	<ion-content ng-controller="second" class="second">
+	    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()">
+	    </ion-refresher>
+	    <!--标题-->
+	    <ion-nav-bar class="bar bar-header bar-light">
+ 	 	</ion-nav-bar>
+ 	 	<div class="tt">
+ 	 		
+ 	 	</div>
+		<!--广告--> 
+		<div class="banner">
+			<img src="img/second-banner.jpg"/>
+		</div>
+		<!--主题-->
+		<!--新手专区-->
+		<div class="main1 main">
+			<h5><span>新手专区</span></h5>
+			<div class="products" ng-repeat="data in main1list track by $index" ng-click="toDetail('newhand',$index)">                      
+				<img src="img/greenhand.jpg" alt="" class="greenhand"/>
+				<p>{{data.periodical}}<span class="{{data.active}}">首投有奖励，土豪有惊喜</span></p>
+				<div class="mid">
+					<p><span>{{data.earning}}</span><br/>年化收益率</p>
+					<p><span>{{data.deading}}</span>天<br/>投资期限</p>
+					<p><span>{{data.residue}}</span>元<br/>剩余金额</p>
+				</div>
+				<div class="proBar">
+					<span ><i style="width: {{data.earning}};"></i></span>
+				</div>	
+			</div>
+		</div>
+		<!--特享专区-->
+		<div class="main2 main">
+			<h5><span>特权尊享区</span></h5>
+			<div class="products" ng-repeat="data in main2list track by $index" ng-click="toDetail('privilege',$index)">
+				<img src="img/tequan.jpg" alt="" class="greenhand"/>
+				<p>{{data.periodical}}<span class="{{data.active}}">首投有奖励，土豪有惊喜</span></p>
+				<div class="mid">
+					<p><span>{{data.earning}}</span><br/>年化收益率</p>
+					<p><span>{{data.deading}}</span>天<br/>投资期限</p>
+					<p><span>{{data.residue}}</span>元<br/>剩余金额</p>
+				</div>
+				<div class="proBar">
+					<span ><i style="width: {{data.earning}};"></i></span>
+				</div>	
+			</div>
+		</div>
+		<!--精品专区-->
+		<div class="main3 main">
+			<h5><span>精品专区</span></h5>
+			<div class="products" ng-repeat="data in main3list track by $index" ng-click="toDetail('boutique',$index)">
+				<p>{{data.periodical}}<span class="{{data.active}}">首投有奖励，土豪有惊喜</span></p>
+				<div class="mid">
+					<p><span>{{data.earning}}</span><br/>年化收益率</p>
+					<p><span>{{data.deading}}</span>天<br/>投资期限</p>
+					<p><span>{{data.residue}}</span>元<br/>剩余金额</p>
+				</div>
+				<div class="proBar">
+					<span ><i style="width: {{data.earning}};"></i></span>
+				</div>	
+			</div>
+		</div>
+		<!--已售罄-->
+		<div class="main4 main">
+			<h5><span>已售罄</span></h5>
+			<div class="products" ng-repeat="data in main4list track by $index" ng-click="toDetail('boutique2',$index)">
+				<p>{{data.periodical}}<span>首投有奖励，土豪有惊喜</span></p>
+				<div class="mid">
+					<p><span>{{data.earning}}</span><br/>年化收益率</p>
+					<p><span>{{data.deading}}</span>天<br/>投资期限</p>
+					<p><span></span><br/></p>
+				</div>	
+			</div>
+		</div>
+		<!--已还款-->
+		<div class="main4 main" style="margin-bottom: 2rem;">
+			<h5><span>已还款</span></h5>
+			<div class="products" ng-repeat="data in main5list track by $index" ng-click="toDetail('boutique3',$index)">
+				<p>{{data.periodical}}<span>首投有奖励，土豪有惊喜</span></p>
+				<div class="mid">
+					<p><span>{{data.earning}}</span><br/>年化收益率</p>
+					<p><span>{{data.deading}}</span>天<br/>投资期限</p>
+					<p><span></span><br/></p>
+				</div>	
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,112 @@
+<ion-view class='fourth'>
+	<ion-content ng-controller="fourth" class="fourth">
+	    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()">
+	    </ion-refresher>
+	    <!--头部-->
+	    <div class="head" >
+	    	<div class="weidenglu" ng-if="weidenglu">
+	    		<p >未登录</p>
+		    	<div class="bot">
+		    		<p>金碗理财</p>
+		    		<button ng-click="goLogin()">登录/注册</button>
+		    	</div>	
+	    	</div>
+	    	
+	    	<div ng-if="yidenglu" class="yidenglu">
+	    		<p class="set"><i class="iconfont icon-shezhi" style="float: right;" ng-click="removeUser()"></i></p>
+	    		<div class="user">
+	    				<p><img src="img/touxiang.jpg"/></p>
+	    				<p>{{users}}</p>
+	    		</div>
+	    		<div class="all">
+	    			<p>总资产(元)<i class="ion-chevron-right" style="font-size: 1rem !important; margin-left: 1rem;"></i></p>
+	    			<p>0.00</p>
+	    		</div>
+	    		<div class="shouyi">
+	    			<div>
+	    				<p>昨日收益(元)<i class="ion-chevron-right" style="font-size: 0.6rem !important; margin-left: 1rem;"></i></p>
+	    				<p>0.00</p>
+	    			</div>
+	    			<div>
+	    				<p>累计收益(元)<i class="ion-chevron-right" style="font-size: 0.6rem !important; margin-left: 1rem;"></i></p>
+	    				<p>0.00</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="head_f">
+	    	<div>
+	    		账号余额:<span>0.00</span>元
+	    	</div>
+	    	<div>
+	    		提现<button>充值</button>
+	    	</div>
+	    </div>
+	    <!--账单-->
+	    <div class="bill">
+	    	<dl style="border-bottom: 1px solid #EEEEEE;border-right: 1px solid #EEEEEE;">
+	    		<dt><img src="img/m1.jpg"/></dt>
+	    		<dd>
+	    			<p>投资记录</p>
+	    			<p>我的投资记录</p>
+	    		</dd>
+	    	</dl>
+	    	<dl style="border-bottom: 1px solid #EEEEEE">
+	    		<dt><img src="img/m2.jpg"/></dt>
+	    		<dd>
+	    			<p>资金明细</p>
+	    			<p>资金流水，尽在掌握</p>
+	    		</dd>
+	    	</dl>
+	    	<dl style="border-right: 1px solid #EEEEEE">
+	    		<dt><img src="img/m3.jpg"/></dt>
+	    		<dd>
+	    			<p>我的红包</p>
+	    			<p>暂未可用红包</p>
+	    		</dd>
+	    	</dl>
+	    	<dl>
+	    		<dt><img src="img/m4.jpg"/></dt>
+	    		<dd>
+	    			<p>邀请好友</p>
+	    			<p>暂未奖励</p>
+	    		</dd>
+	    	</dl>
+	    </div>
+	    <!--列表-->
+	    <div class="list card">
+
+		  <a href="#" class="item item-icon-left">
+		    <img src="img/m5.jpg"/>
+		    了解我们
+		    <i class="ion-chevron-right" style="float: right;"></i>
+		  </a>
+		
+		  <a href="#" class="item item-icon-left">
+		    <img src="img/m6.jpg"/>
+		    帮助中心
+		    <i class="ion-chevron-right" style="float: right;"></i>
+		  </a>
+		
+		  <a href="#" class="item item-icon-left">
+		    <img src="img/m7.jpg"/>
+		    意见反馈
+		    <i class="ion-chevron-right" style="float: right;"></i>
+		  </a>
+		
+		  <a href="#" class="item item-icon-left">
+		    <img src="img/m8.jpg"/>
+		    联系客服
+		    <i class="ion-chevron-right" style="float: right;"></i>
+		    <span>9:00-21:00</span>
+		  </a>
+			<a href="#" class="item item-icon-left">
+		    <img src="img/m9.jpg"/>
+		    版本更新
+		    <i class="ion-chevron-right" style="float: right;"></i>
+		    <span>v1.5</span>
+		    
+		  </a>
+		</div>
+	</ion-content>
+</ion-view>

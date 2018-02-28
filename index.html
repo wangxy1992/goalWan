@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.min.css" rel="stylesheet">
+   	<link rel="stylesheet" type="text/css" href="css/lib/mobile_Public.css"/>
+   	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+   	<link rel="stylesheet" type="text/css" href="css/lib/swiper-3.3.1.min.css"/>
+   	<link rel="stylesheet" type="text/css" href="css/lib/font_548741_ce2ie1qt5t7c766r/iconfont.css"/>
+   	<script src="https://cdn.bootcss.com/ionic/1.3.2/js/angular/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.js"></script>
+    <script src="https://cdn.bootcss.com/ionic/1.3.2/js/angular/angular-animate.min.js"></script>    
+	<script src="js/lib/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div ng-app="pro" ng-controller="demo" >
+		<input type="hidden" ng-model="user" value="" />
+		
+		<!--路由-->
+		<ion-nav-view animation="slide-left-right" >
+			
+		</ion-nav-view>
+
+		<!--尾部导航--------------------------------->
+		<footer ng-style="fff">
+			<div class="tabs tabs-icon-top">
+			  <a class="tab-item" ng-click="routeGo('shouye')" ng-style="shouye" nav-transition="android" >
+			    <i class="iconfont icon-zuanshi"></i>
+			    首页
+			  </a>
+			  <a class="tab-item" ng-click="routeGo('manage')" ng-style="manage" nav-transition="android" >
+			    <i class="iconfont icon-qian"></i>
+			    理财
+			  </a>
+			  <a class="tab-item" ng-click="routeGo('find')" ng-style="find" nav-transition="android" >
+			    <i class="iconfont icon-compasszhinanzhen" style="font-size: 0.9rem !important;"></i>
+			    发现
+			  </a>
+			  <a class="tab-item" ng-click="routeGo('myself')" ng-style="myself" nav-transition="android" >
+			    <i class="iconfont icon-wode"></i>
+			    我的
+			  </a>
+			</div>
+		</footer>
+		<button id="btn" ng-style="bbb" ng-click="touzi()" style="display: none;">立即投资</button>
+		<!--弹窗-->
+		<div class="tan" ng-if="tan" ng-class="{tan:true}">
+			<img src="img/tan.png"/>
+		</div>
+	</div>
+	<script src="js/new.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
